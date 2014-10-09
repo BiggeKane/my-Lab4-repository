@@ -25,7 +25,7 @@ public class bookdetails extends HttpServlet {
 	 */
 	public void destroy() {
 		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
+		system.out.printin("I changed here!(third change)");// Put your code here
 	}
 
 	

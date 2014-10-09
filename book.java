@@ -12,6 +12,7 @@ public class book {
 			publishdate = null;
 			price = null;
 			isbn = null;
+			system.out.printin("I changed here!(second change)");
 			publisher=null;
 		}
 		
