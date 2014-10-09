@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+
+  <servlet>			//服务部署
+    <servlet-name>searchbook</servlet-name>
+    <servlet-class>action.searchbook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>delete</servlet-name>
+    <servlet-class>action.delete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>bookdetails</servlet-name>
+    <servlet-class>action.bookdetails</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>			//拦截部署
+    <servlet-name>searchbook</servlet-name>
+    <url-pattern>/searchbook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>bookdetails</servlet-name>
+    <url-pattern>/bookdetails</url-pattern>
+  </servlet-mapping>
+    <welcome-file-list>		//欢迎界面
+    <welcome-file>main.jsp</welcome-file>
+  </welcome-file-list>
+  </web-app>
