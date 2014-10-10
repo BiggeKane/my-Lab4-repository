@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </tr>
 
   <tr>
-    <td width="99" height="33">图书名称</td>
+    <td width="99" height="33">图书名称（改动）</td>
     <td width="199"><%=request.getAttribute("authorid")%></td>
   </tr>
 </table>
